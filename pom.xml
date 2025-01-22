@@ -157,7 +157,7 @@
 		<dependency>
 			<groupId>commons-pool</groupId>
 			<artifactId>commons-pool</artifactId>
-			<version>1.5.3</version>
+			<version>20030825.183949</version>
 		</dependency>
 		<!-- Logging -->
 		<dependency>
