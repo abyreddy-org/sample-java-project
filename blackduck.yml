@@ -1,3 +1,0 @@
-- name: Black Duck Security Scan
-
-  uses: blackduck-inc/black-duck-security-scan@v2.1.1
