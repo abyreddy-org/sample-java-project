@@ -1,4 +1,6 @@
 name: Black Duck Security Scan
+env:
+  DETECT_DOWNLOAD_URL: "https://repo.blackduck.com/artifactory/bds-integrations-release/com/blackduck/integration/detect/10.5.0/detect-10.5.0.jar"
 on:
   push:
     branches:
@@ -24,8 +26,6 @@ jobs:
       - name: Black Duck Security Scan
         id: black-duck-security-scan
         uses: blackduck-inc/black-duck-security-scan@v2
-        env:
-          DETECT_DOWNLOAD_URL: "https://repo.blackduck.com/artifactory/bds-integrations-release/com/blackduck/integration/detect/10.5.0/detect-10.5.0.jar"
         with:
           blackducksca_url: ${{ vars.BLACKDUCKSCA_URL }}
           blackducksca_token: ${{ secrets.BLACKDUCKSCA_TOKEN }}
