@@ -1,6 +1,6 @@
 name: Black Duck Security Scan
 env:
-  DETECT_DOWNLOAD_URL: "https://repo.blackduck.com/artifactory/bds-integrations-release/com/blackduck/integration/detect/10.5.0/detect-10.5.0.jar"
+  BRIDGE_DETECT_DOWNLOAD_URL: "https://repo.blackduck.com/artifactory/bds-integrations-release/com/blackduck/integration/detect/10.5.0/detect-10.5.0.jar"
 on:
   push:
     branches:
